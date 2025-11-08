@@ -1,0 +1,11 @@
+{
+  "name": "PIT Lab (Java + Maven)",
+  "image": "mcr.microsoft.com/devcontainers/java:0-11",
+  "postCreateCommand": "mvn -q -DskipTests=true -T1C package || true",
+  "customizations": {
+    "vscode": {
+      "extensions": ["redhat.java","vscjava.vscode-java-debug"]
+    }
+  },
+  "features": {}
+}
